@@ -1,0 +1,18 @@
+.home {
+  margin: 0 0.65em;
+  min-height: 100vh;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");
+  background-repeat: repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    margin: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home {
+    margin: 0 5em;
+  }
+}

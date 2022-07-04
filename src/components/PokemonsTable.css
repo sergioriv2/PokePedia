@@ -1,0 +1,40 @@
+.table-container {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.table {
+  margin: 2em 0;
+  min-width: 100%;
+  border: 2px solid #d3d3d3;
+  border-collapse: collapse;
+  background-color: #fefefe;
+}
+
+.table thead,
+td {
+  border: 2px solid #d3d3d3;
+}
+
+.table thead {
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.table thead tr td {
+  min-width: 100px;
+}
+
+.table td {
+  padding: 5px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .table td {
+    padding: 10px 15px;
+  }
+
+  .table-container {
+    overflow-x: hidden;
+  }
+}

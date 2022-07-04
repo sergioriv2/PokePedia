@@ -1,0 +1,19 @@
+.button {
+  min-width: 100px;
+  max-width: 140px;
+  max-height: 35px;
+  min-height: 35px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #6559ec;
+  color: #fff;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.05em;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

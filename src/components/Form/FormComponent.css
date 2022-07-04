@@ -1,0 +1,38 @@
+.text-field,
+.range-field {
+  min-width: 320px;
+  max-width: 340px;
+  min-height: 50px;
+  margin-bottom: 0.5em;
+}
+
+.text-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-field__input {
+  margin-left: 10px;
+  height: 35px;
+  outline: none;
+  padding: 0 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.text-field-error {
+  border: 2px solid #c2331d;
+}
+
+.range-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range-field__values-container {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
