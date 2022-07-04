@@ -1,3 +1,4 @@
+import { ApiInterface } from "../interfaces/ServerInterfaces";
 import "./PokemonsTable.css";
 
 const PokemonsTable = () => {
@@ -14,13 +15,17 @@ const PokemonsTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Ivysaur</td>
-            <td>Ivysaur</td>
-            <td>65</td>
-            <td>38</td>
-            <td>Lapiz y Tachito</td>
-          </tr>
+          {/* {data.map((el) => (
+            <tr key={el.id}>
+              <td>{el.name}</td>
+              <td>
+                <img alt={el.name} src={el.image} className="table-image"></img>
+              </td>
+              <td>{el.attack}</td>
+              <td>{el.defense}</td>
+              <td>Lapiz y Tachito</td>
+            </tr>
+          ))} */}
         </tbody>
         <tfoot></tfoot>
       </table>

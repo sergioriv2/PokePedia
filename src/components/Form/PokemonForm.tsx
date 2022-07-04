@@ -5,15 +5,10 @@ import * as Yup from "yup";
 
 import "./PokemonForm.css";
 import Button from "../Button";
+import { FormInitialValues } from "../../interfaces/FormInterfaces";
+import SubmitButton from "./SubmitButton";
 
-interface FormikInitialValues {
-  name: string;
-  image: string;
-  attack: number;
-  defense: number;
-}
-
-const inititialValues: FormikInitialValues = {
+const initialValues: FormInitialValues = {
   name: "",
   image: "",
   attack: 0,
@@ -27,12 +22,15 @@ const PokemonForm = () => {
         <h3>Nuevo Pokemon</h3>
       </div>
       <Formik
-        initialValues={inititialValues}
+        initialValues={initialValues}
         onSubmit={(values) => {
           console.log(values);
         }}
         validationSchema={Yup.object({
           name: Yup.string().required(),
+          image: Yup.string().required(),
+          attack: Yup.number().required(),
+          defense: Yup.number().required(),
         })}
       >
         <Form className="form__content">
@@ -49,9 +47,7 @@ const PokemonForm = () => {
             <RangeField label="Defensa" name="defense"></RangeField>
           </div>
           <div className="form__buttons-container">
-            <Button type="submit" disabled={true}>
-              Agregar
-            </Button>
+            <SubmitButton />
             <Button type="button">Cancelar</Button>
           </div>
         </Form>

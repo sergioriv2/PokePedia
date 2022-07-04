@@ -3,6 +3,17 @@ export enum TextFieldTypes {
   password = "password",
 }
 
+export interface SearchInitialValues {
+  search: "";
+}
+
+export interface FormInitialValues {
+  name: string;
+  image: string;
+  attack: number;
+  defense: number;
+}
+
 export interface ButtonProps {
   type?: "submit" | "reset" | "button";
   disabled?: boolean;
@@ -11,7 +22,7 @@ export interface ButtonProps {
 }
 
 export interface TextFieldProps {
-  label: string;
+  label?: string;
   placeholder?: string;
   type?: "text" | "password";
 }

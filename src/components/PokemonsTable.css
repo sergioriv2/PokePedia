@@ -29,6 +29,12 @@ td {
   padding: 5px 10px;
 }
 
+.table-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
 @media only screen and (min-width: 768px) {
   .table td {
     padding: 10px 15px;

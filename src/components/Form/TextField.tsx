@@ -9,11 +9,12 @@ const TextField = ({
 }: TextFieldProps & FieldHookConfig<string>) => {
   const [field, meta] = useField(props);
 
-  console.log(meta);
-
   return (
     <div className="text-field">
-      <label className="text-field__label">{label + ": "}</label>
+      {label === "" ? null : (
+        <label className="text-field__label">{label + ": "}</label>
+      )}
+
       <input
         className={`text-field__input ${
           meta.touched && meta.error ? "text-field-error" : ""
